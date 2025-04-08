@@ -1,0 +1,173 @@
+:root {
+    --azul: #007BFF;
+    --naranja: #FFA500;
+    --blanco: #FFFFFF;
+    --gris-claro: #f4f4f4;
+    --gris: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--gris-claro);
+    color: var(--gris);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--naranja);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: 60px auto 40px;
+    background-color: var(--blanco);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--naranja);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+input,
+textarea {
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+textarea {
+    resize: none;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--azul);
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: var(--azul);
+    color: var(--blanco);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--naranja);
+    color: #000;
+    transform: scale(1.05);
+}
+
+.social {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--azul);
+}
+
+.social a {
+    color: var(--naranja);
+    font-size: 30px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: var(--azul);
+}
+
+.telefono {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--azul);
+    text-align: center;
+}
+
+footer {
+    background-color: var(--azul);
+    color: var(--blanco);
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 20px 10px;
+    }
+
+    .social a {
+        font-size: 24px;
+        margin: 0 10px;
+    }
+
+    .telefono {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
