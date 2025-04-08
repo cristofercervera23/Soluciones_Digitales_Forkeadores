@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soluciones Digitales</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+
+      /* FONDO CON LA IMAGEN */
+      background: url('logo-tecnologia.png') no-repeat center center fixed;
+      background-size: 800px 600px;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente para legibilidad */
+    }
+
+    nav {
+      background-color: #0e1a35;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .servicios {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .servicios h2 {
+      font-size: 2.5em;
+      color: #0e1a35;
+      margin-bottom: 40px;
+    }
+
+    .servicio-lista {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+    }
+
+    .servicio {
+        background-color:transparente;
+        border-radius: 10px;
+        padding: 30px;
+        width: 100%; /* ✅ Ahora ocupará todo el ancho disponible */
+        max-width: 1000px; /* Opcional: puedes poner un límite */
+        margin: 0 auto; /* Para centrarlo si tiene un max-width */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+
+
+    .servicio:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .servicio h3 {
+      color: #ff5c2a;
+      margin-bottom: 15px;
+    }
+
+    .servicio p {
+      color: #333;
+      font-size: 1em;
+    }
+
+    footer {
+      background-color: #0e1a35;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <div style="color:white; font-weight:bold;">SOLUCIONES DIGITALES</div>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Quienes somos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#">Personal</a></li>
+        <li><a href="#">Contactos</a></li>
+      </ul>
+    </nav>
+
+    <section class="servicios" id="servicios">
+      <h2>¿Quienes somos?</h2>
+      <div class="servicio-lista">
+        <div class="servicio">
+          <h3>Soluciones digitales MX</h3>
+        <p>Somos una empresa de tecnología especializada en la solución de problemas tecnológicos para nuestros clientes, ofreciendo servicios personalizados y de alta calidad. Con años de experiencia en el sector, nos destacamos por nuestra capacidad para entender las necesidades específicas de cada negocio y brindar soluciones innovadoras, eficientes y escalables.
+
+            Como una de las principales empresas especializadas en tecnología de la zona, 
+            contamos con un equipo de profesionales altamente capacitados y certificados en 
+            las últimas tendencias del mercado. Esto nos permite ofrecer servicios a la vanguardia de 
+            las tecnologías actuales, como:
+        </p>
+
+
+        <ul>
+            <p style="text-align: left;">
+                <li>-Desarrollo de software a medida (web, móvil y empresarial). </li>
+            
+                <li>-Infraestructura y cloud computing (migración, optimización y seguridad en la nube).</li>
+            
+                <li>-Ciberseguridad y protección de datos.</li>
+        
+                <li>-Soporte técnico especializado (presencial y remoto).</li>
+            </p>
+        </ul
+        
+        <p>Nuestro compromiso es ser socios estratégicos de nuestros clientes, acompañándolos en 
+            su transformación digital con soluciones ágiles, confiables y adaptadas a sus objetivos. 
+            Innovación, eficiencia y excelencia son los pilares que nos definen.</p>
+    
+
+        </div>
+        
+    </section>
+
+    <footer>
+      &copy; 2025 Soluciones Digitales | www.solucionesdigitales.com
+    </footer>
+  </div>
+</body>
+</html>
