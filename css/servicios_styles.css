@@ -1,0 +1,69 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base general */
+html,
+body {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+    scroll-behavior: smooth;
+}
+
+
+/* Sección Servicios */
+.servicios {
+    background-color: #ffffff;
+    padding: 60px 40px;
+    text-align: center;
+    flex: 1;
+
+}
+
+.servicios h2 {
+    font-size: 2.5em;
+    color: #0e1a35;
+    margin-bottom: 40px;
+}
+
+.servicio-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.servicio {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.servicio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.servicio h3 {
+    color: #ff5c2a;
+    margin-bottom: 15px;
+}
+
+.servicio p {
+    color: #333;
+    font-size: 1em;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
