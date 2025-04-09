@@ -70,14 +70,3 @@ body {
     color: #333;
     font-size: 1em;
 }
-
-ul {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-left: 20px;
-}
-
-li {
-    text-align: left;
-    margin-bottom: 10px;
-}
